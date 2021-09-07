@@ -1,0 +1,1 @@
+$(".nave .menu").on("click",()=>{$(".mobile-menu").toggleClass("active")}),$(".purchases-btn").on("click",()=>{$(".purchases").addClass("active")}),$(".purchases .head span.close ").on("click",()=>{$(".purchases").removeClass("active")});

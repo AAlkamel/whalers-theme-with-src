@@ -1,0 +1,141 @@
+@use '../variables/colors';
+@use '../variables/media' as *;
+header {
+	position: relative;
+	z-index: 10;
+}
+nav {
+	background-color: colors.$light-1;
+	box-shadow: 0 0 30px #0000001c;
+	.nave {
+		display: flex;
+		grid-template-columns: auto auto auto;
+		justify-content: space-between;
+		.menu {
+			display: none;
+			@media #{$mobile} {
+				display: inline-block;
+				a {
+					color: colors.$blue-1;
+					height: 100%;
+					display: block;
+					position: relative;
+					i {
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+			}
+		}
+		.nave-item {
+			@media #{$mobile} {
+				display: none;
+			}
+		}
+		.logo {
+			img {
+				height: 60px;
+			}
+			padding: 20px 0;
+		}
+		ul {
+			list-style: none;
+			margin: 0;
+			height: 100%;
+			li {
+				position: relative;
+				height: 100%;
+				width: 100px;
+				text-align: center;
+				display: inline-block;
+				background-color: transparent;
+				transition: ease .3s;
+				@media #{$maxSmall} {
+					width: 75px;
+				}
+				&::after {
+					transition: .3s;
+					content: "";
+					position: absolute;
+					left: 0;
+					z-index: 1;
+					bottom: 0px;
+					height: 1px;
+					width: 0%;
+					background-color: #22a4d9;
+				}
+
+				&:hover {
+					background-color: colors.$light-0;
+					&::after {
+						width: 100%;
+					}
+					a {
+						color: colors.$blue-1;
+					}
+				}
+				a {
+					display: inline-block;
+					position: relative;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
+		}
+		.right {
+			ul {
+				@media #{$mobile} {
+					padding-left: 8px;
+				}
+				li {
+					width: 50px;
+					@media #{$mobile} {
+						width: 19px;
+					}
+
+					&::after {
+						background-color: transparent;
+					}
+
+					&:hover {
+						background-color: transparent;
+						a {
+							color: colors.$blue-1;
+							background-color: colors.$light-0;
+							border: solid 1px #4c7d910a;
+							background-color: #3db6e40f;
+							transition: ease .3s;
+						}
+					}
+					a {
+						display: inline-block;
+						position: relative;
+						width: 40px;
+						height: 40px;
+						line-height: 40px;
+						border-radius: 21px;
+						border: solid 1px transparent;
+						top: 50%;
+						transform: translateY(-50%);
+						@media #{$mobile} {
+							width: 25px;
+							height: 25px;
+							line-height: 25px;
+							font-size: 13px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.divider {
+	position: relative;
+	img {
+		position: absolute;
+		width: 100%;
+		margin-top: 0px;
+		filter: drop-shadow(0px 18px 11px #00000009);
+	}
+}

@@ -1,0 +1,66 @@
+@use '../variables/colors';
+.divider-footer {
+	img {
+		position: relative;
+		width: 100%;
+		margin-top: 0px;
+		filter: drop-shadow(0px -4px 2px #0f021634);
+	}
+}
+footer {
+	.footer {
+		// height: 250px;
+		background-color: colors.$blue-0;
+		padding-bottom: 70px;
+	}
+	h5 {
+		margin-bottom: 20px;
+		color: colors.$light-1;
+	}
+	.payment {
+		img {
+			max-width: 75px;
+			margin: 0 5px;
+		}
+	}
+	.social {
+		h5 {
+			margin: 20px 0;
+		}
+		i {
+			text-align: center;
+			color: #f8f9fa;
+			background-color: #2a6e90;
+			padding: 10px 0;
+			margin: 5px;
+			width: 35px;
+			font-size: 14px;
+			border-radius: 60px;
+			transition: ease-out .3s;
+			&:hover {
+				color: #05557d;
+				background-color: #ffffff;
+			}
+		}
+	}
+	.about-stor {
+		p {
+			color: colors.$light-0;
+			font-weight: 100;
+		}
+	}
+	.more-inf {
+		ul {
+			list-style: none;
+			li {
+				a {
+					color: colors.$light-0;
+					transition: .3s;
+					&:hover {
+						color: colors.$blue-4;
+					}
+				}
+			}
+		}
+	}
+}
