@@ -1,0 +1,78 @@
+@use '../variables/colors' as *;
+@use '../variables/media' as *;
+@use '../components/carousel-product';
+
+.page.product {
+	.content {
+		.info {
+			margin-top: 20px;
+			h4 {
+				margin: 10px 0;
+				color: #707070;
+				font-weight: 400;
+			}
+			p {
+				color: #707070;
+			}
+			.price {
+				text-align: center;
+				.total-price {
+					margin: 10px 0;
+					span {
+						font-size: 20px;
+						color: #707070;
+						text-transform: uppercase;
+					}
+				}
+				.number {
+					display: inline-flex;
+					display: inline-flex;
+					box-shadow: 0 0 2px #065780b3;
+					border-radius: 7px;
+					overflow: hidden;
+					span {
+						width: 30px;
+						height: 30px;
+						text-align: center;
+						line-height: 28px;
+						font-size: 18px;
+						font-weight: 500;
+						background-color: #2bb1e3;
+						transition: .3s;
+						color: $dark-0;
+						cursor: pointer;
+						&:hover {
+							background-color: #1b7799;
+							color: $gray-1;
+						}
+					}
+					input {
+						width: 105px;
+						height: 30px;
+						text-align: center;
+						line-height: 28px;
+						font-size: 16px;
+						font-weight: 500;
+						outline: none;
+						color: #707070;
+						background-color: transparent;
+						border: solid 1px #2bb1e3;
+					}
+				}
+			}
+			.buttons {
+				margin: 10px 0;
+				text-align: center;
+			}
+		}
+		.strip {
+			.social {
+				text-align: center;
+				a {
+					display: inline-block;
+					padding: 0 5px;
+				}
+			}
+		}
+	}
+}

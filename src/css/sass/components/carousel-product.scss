@@ -1,0 +1,25 @@
+@use '../variables/colors' as *;
+@use '../variables/media' as *;
+.carousel-product {
+	margin-top: 120px;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 0 5px #6c6c6c8a;
+	.carousel-inner {
+		.carousel-item {
+			position: relative;
+			height: calc(100vh - 250px);
+			&::after {
+				content: '';
+				z-index: 1;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				background-color: #342353a8;
+				filter: grayscale(.8);
+			}
+		}
+	}
+}

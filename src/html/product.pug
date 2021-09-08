@@ -1,0 +1,46 @@
+-var pageTitle = 'product' ;
+doctype html
+html(lang="en")
+    head
+        include pug/layout/head
+        include pug/layout/styles
+    body 
+        include pug/layout/mobileMenu
+        include pug/layout/purchases
+        include pug/layout/header
+        .page.product
+            .content
+                .container 
+                    include pug/components/carousel-product
+                    .info
+                        .row 
+                            .col-md-8(style="padding:10px 15px;")
+                                h4 Product Name 
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit praesentium, nobis aperiam facere doloremque in numquam sit dolor consequuntur architecto, recusandae doloribus, sed at quasi voluptatem ipsa maxime. Magni, cupiditate.
+                            .col-md-4(style="padding:10px 0; background-color:#00000003")   
+                                .price 
+                                    .total-price
+                                        span price 20 $
+                                    .number 
+                                        span.left -
+                                        input(type="number" value="1")
+                                        span.right +
+                                .buttons 
+                                    span.bttn add to bag 
+                                    span.fba.like.heart 
+                                        i.ti-heart
+                        hr(style="margin-top: 0;color: #c5c5c5;")
+                    .strip(style="margin-bottom: 30px;")
+                        h5  Share
+                        .social
+                            a(href="#"): i.fab.fa-facebook
+                            a(href="#"): i.fab.fa-twitter
+                            a(href="#"): i.fab.fa-instagram
+                            a(href="#"): i.fab.fa-snapchat
+                            a(href="#"): i.fab.fa-youtube
+                            a(href="#"): i.fab.fa-pinterest
+                    include pug/components/carousel4
+                .final
+                    img(src="./images/l-logo.svg", alt="")
+            include pug/layout/footer
+        include pug/layout/scripts

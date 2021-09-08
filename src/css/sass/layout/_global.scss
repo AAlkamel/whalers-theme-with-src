@@ -25,3 +25,47 @@ a {
 		color: colors.$blue-1;
 	}
 }
+span.bttn {
+	cursor: pointer;
+	padding: 5px 15px;
+	text-transform: uppercase;
+	border-radius: 6px;
+	color: #fff;
+	background-image: linear-gradient(to right, #1a98cf, #2db3e5, #1a98cf);
+	border: solid 1px #1b99d0;
+	box-shadow: 0 0 5px #176f9694;
+	background-size: 200%;
+	background-color: transparent;
+	transition: ease-out .5s;
+	margin: 5px;
+	&:hover {
+		background-position: right;
+	}
+}
+span.fba {
+	display: inline-block;
+	cursor: pointer;
+	width: 33px;
+	height: 33px;
+	padding: 5px;
+	text-align: center;
+	line-height: 22px;
+	text-transform: uppercase;
+	border-radius: 17px;
+	color: #fff;
+	background-image: linear-gradient(to right, #1a99cf38, #2db4e538, #1a99cf38);
+	border: solid 1px #1b9ad038;
+	box-shadow: 0 0 5px #17709642;
+	background-size: 200%;
+	background-color: transparent;
+	transition: ease-out .5s;
+	margin: 0 5px;
+	&.like.heart {
+		background-image: linear-gradient(to right, #1a98cf, #2db3e5, #1a98cf);
+		border: solid 1px #1b99d0;
+		box-shadow: 0 0 5px #176f9694;
+	}
+	&:hover {
+		background-position: right;
+	}
+}
