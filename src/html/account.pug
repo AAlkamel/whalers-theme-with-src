@@ -1,0 +1,35 @@
+-var pageTitle = 'My Account' ;
+doctype html
+html(lang="en")
+    head
+        include pug/layout/head
+        include pug/layout/styles
+    body 
+        include pug/layout/mobileMenu
+        include pug/layout/purchases
+        include pug/layout/header
+        .page.account
+            .content(style="margin-bottom: 65px;")
+                .container
+                    .row 
+                        .col-md-4
+                            .side 
+                                ul#side-btn 
+                                    li#Account My Account 
+                                    li#Address Address 
+                                    li#Payment Payment 
+                                    li#Wish Wish list
+                        .col-md-8.content-forms
+                            h3#title My Account
+                            .forms
+                                include pug/components/my-account
+                                include pug/components/address
+                                include pug/components/Payment
+                                include pug/components/Wish-list
+                            .buttons(style="text-align:center") 
+                                    span.bttn save 
+                                    span.bttn cancel  
+
+
+            include pug/layout/footer
+        include pug/layout/scripts

@@ -1,0 +1,40 @@
+@use '../variables/colors' as *;
+@use '../variables/media' as *;
+
+.not-found {
+	height: 100vh;
+	background-color: $gray-1;
+	& > div {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		max-width: 400px;
+		min-width: 30%;
+		@media #{$mobile} {
+			min-width: 65%;
+		}
+		h2 {
+			text-align: center;
+			text-transform: uppercase;
+			color: #707070;
+			margin-bottom: 30px;
+		}
+		.img {
+			width: 100%;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.text {
+			text-align: center;
+		}
+		p {
+			padding: 10px;
+			text-align: center;
+			color: #666666;
+		}
+	}
+}

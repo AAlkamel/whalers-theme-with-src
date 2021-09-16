@@ -1,0 +1,17 @@
+-var pageTitle = 'not-found' ;
+doctype html
+html(lang="en")
+    head
+        include pug/layout/head
+        include pug/layout/styles
+    body
+        .not-found
+            div
+                h2 Error 404
+                .img
+                    img(src="./images/404.svg")
+                .text 
+                    p page is not found. 
+                        |the page is doesn't exist or was deleted
+                    span.bttn back to home
+        include pug/layout/scripts
