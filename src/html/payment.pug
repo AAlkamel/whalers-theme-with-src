@@ -1,0 +1,108 @@
+-var pageTitle = 'payment' ;
+doctype html
+html(lang="en")
+    head
+        include pug/layout/head
+        include pug/layout/styles
+    body 
+        include pug/layout/mobileMenu
+        include pug/layout/purchases
+        include pug/layout/header
+        .page.payment
+            .content(style="margin-bottom: 65px;")
+                .container
+                    .row 
+                        .col-md-8
+                            form
+                                .row 
+                                    .col-12.mb-3 
+                                        .d-flex 
+                                            .img 
+                                                img(src="./images/50-2.jpg", alt="")
+                                            span Zaid (zaid@gmail.com)
+                                    .col-12 
+                                        h3 shipping Address
+                                    .col-md-6 
+                                        input(type="text" placeholder="First Name")
+                                    .col-md-6 
+                                        input(type="text" placeholder="Last Name")
+                                    .col-12 
+                                        input(type="text" placeholder="Address 1")
+                                    .col-12 
+                                        input(type="text" placeholder="Address 2")
+                                    .col-md-6 
+                                        input(type="text" placeholder="Country")
+                                    .col-md-6 
+                                        input(type="text" placeholder="City")
+                                    .col-12 
+                                        input(type="tel" placeholder="phone")
+                                    .col-12 
+                                        .form-check.p-0
+                                            input#flexCheckDefault.form-check-input(type='checkbox' value='')
+                                            label.form-check-label(for='flexCheckDefault')
+                                                | save this information to next time
+                                    .col-12 
+                                        .buttons.text-center.pt-3
+                                            span.bttn Pay Now 
+                                            span.bttn Return to shopping
+
+                        .col-md-4.fixed-hight
+                            .product
+                                .img 
+                                    img(src="./images/4-11.jpg", alt="")
+                                .details 
+                                    i.ti-trash.trash
+                                    i.ti.ti-heart
+                                    h5.product-name Product Name
+                                    p.description Lorem ipsum dolor.
+                                    .price 
+                                        .number 
+                                            span -
+                                            input(type="number" value="1")
+                                            span +
+                                    div
+                                        .price-for-one 
+                                            span price
+                                            span 20 $
+                                        .total-price 
+                                            span total price 
+                                            span 20 $
+                            .product
+                                .img 
+                                    img(src="./images/4-11.jpg", alt="")
+                                .details 
+                                    i.ti-trash.trash
+                                    i.ti.ti-heart
+                                    h5.product-name Product Name
+                                    p.description Lorem ipsum dolor.
+                                    .price 
+                                        .number 
+                                            span -
+                                            input(type="number" value="1")
+                                            span +
+                                    div
+                                        .price-for-one 
+                                            span price
+                                            span 20 $
+                                        .total-price 
+                                            span total price 
+                                            span 20 $
+                            .actions 
+                                input(type="text" placeholder="Discount Code")
+                                .button 
+                                    span.bttn Apply 
+                            .info 
+                                .subtotal.details 
+                                    span subtotal 
+                                    span 11.9 $
+                                .shipping.details 
+                                    span shipping 
+                                    span 5 $
+                                .total.details
+                                    span total 
+                                    span 16.9 $
+
+
+
+            include pug/layout/footer
+        include pug/layout/scripts
