@@ -1,0 +1,29 @@
+-var pageTitle = 'login' ;
+doctype html
+html(lang="en")
+    head
+        include pug/layout/head
+        include pug/layout/styles
+    body 
+        .page.login
+            .content
+                .container 
+                    .row 
+                        .col-12
+                            .parent
+                                .child
+                                    .img 
+                                        img(src="./images/l-logo.svg", alt="logo")
+                                    h3 LOGIN
+                                    .redirect
+                                        a(style="font-size:13px" href="#") Create a new Account 
+                                    .input 
+                                        label(for="") User Name
+                                        input(type="text" placeholder="User Name")
+                                    .input 
+                                        label(for="") Password
+                                        input(type="password" placeholder="******")
+                                    .buttons.text-center.pt-3
+                                            span.bttn login
+            
+        include pug/layout/scripts

@@ -16,14 +16,14 @@ $(document).ready(function() {
         $( this ).toggleClass( "heart" );
     });
     // -------------like--------
-    $( "i.ti.ti-heart" ).click(function() {
+    $( "i.ti" ).click(function() {
         $( this ).toggleClass( "heart" );
     });
     // -------------i.ti-layout list or grid--------
-    $( "i.ti-layout-grid3" ).click(function() {
+    $( "i.th" ).click(function() {
         $( '.items' ).removeClass( "list" );
     });
-    $( "i.ti-view-list-alt" ).click(function() {
+    $( "i.list" ).click(function() {
         $( '.items' ).addClass( "list" );
     });
 

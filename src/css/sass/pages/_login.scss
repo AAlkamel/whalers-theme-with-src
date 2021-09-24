@@ -1,0 +1,46 @@
+@use '../variables/colors' as *;
+@use '../variables/media' as *;
+.page.login {
+	.content {
+		background-image: url("../images/030.jpg");
+		background-size: cover;
+		.parent {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			.child {
+				h3 {
+					text-align: center;
+					margin-bottom: 10px;
+					font-weight: 400;
+					font-size: 25px;
+					color: #707070;
+				}
+				.img {
+					margin: 0px 0 20px;
+					text-align: center;
+					img {
+						width: 100%;
+						max-width: 170px;
+					}
+				}
+				.input {
+					min-width: 270px;
+					margin: 5px 0;
+					input {
+						width: 100%;
+						display: block;
+					}
+					label {
+						font-size: 14px;
+					}
+				}
+				.redirect {
+					margin: 0 0 -14px;
+					text-align: end;
+				}
+			}
+		}
+	}
+}
